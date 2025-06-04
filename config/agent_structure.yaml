@@ -1,0 +1,40 @@
+god:
+  name: "CreatorGPT"
+  model: "gpt-4-vision-preview"
+  scope: "global"
+
+admin:
+  name: "Papst"
+  user_id: "UID-ROOT"
+  permissions: ["create", "assign", "audit", "shutdown"]
+
+operators:
+  - id: "trading"
+    role: "Kardinal"
+    manages: ["MarketScanner", "RiskManager"]
+  - id: "tokenization"
+    role: "Kardinal"
+    manages: ["TokenBuilder", "AssetLegalizer"]
+  - id: "mobility"
+    role: "Kardinal"
+    manages: ["LockController", "RentalOrchestrator"]
+
+tasks:
+  - id: "MarketScanner"
+    role: "Pfarrer"
+    tools: ["binance", "ccxt"]
+  - id: "RiskManager"
+    role: "Pfarrer"
+    tools: ["redis", "model:RiskGPT"]
+  - id: "TokenBuilder"
+    role: "Pfarrer"
+    tools: ["eth-client", "supabase"]
+  - id: "LockController"
+    role: "Pfarrer"
+    tools: ["mqtt", "gps-tracker"]
+
+people:
+  - id: "community_api"
+    type: "Pfarrgemeinde"
+    input: true
+    feedback: true

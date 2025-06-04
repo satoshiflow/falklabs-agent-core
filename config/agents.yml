@@ -1,0 +1,13 @@
+agents:
+- name: GodAgent
+  path: agents/god_agent
+- name: CashbackAgent
+  path: agents/cashback_agent
+- name: PapstAgent
+  path: agents/papst_agent
+- name: KardinalAgent
+  path: agents/kardinal_agent
+- name: BischofAgent
+  path: agents/bischof_agent
+- name: BischofAgent
+  path: agents/bischof_agent
